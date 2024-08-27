@@ -26,7 +26,7 @@ Start the Local Server
 Start the local server by entering the following command:
 Code:
                   
-     python -m http.server 8080
+       python -m http.server 8080
 * Once the server is running, you will see a message indicating that it's serving at port 8080.
 Run the Game
 
