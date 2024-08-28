@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="scoreboard">
+        <div id="score">Score: 0</div>
+        <div id="level">Level: 1</div>
+    </div>
+    <div id="leaderboard">
+        <h3>Leaderboard</h3>
+        <ul id="leaderboard-list"></ul>
+    </div>
+    <div id="game">
+        <div id="player"></div>
+        <div id="invaders"></div>
+        <!-- Bunkers will be inserted here by JavaScript -->
+        <div id="bunker-container"></div> <!-- Container for the bunkers -->
+    </div>
+    <div id="lives-container">
+        <img src="images/space_invader.png" class="life" id="life-1">
+        <img src="images/space_invader.png" class="life" id="life-2">
+        <img src="images/space_invader.png" class="life" id="life-3">
+    </div>
+    <!-- How to Play Section -->
+    <div id="how-to-play">
+        <h3>How to Play</h3>
+        <ol>
+            <li>Use the left and right arrow keys to move your spaceship.</li>
+            <li>Press the spacebar to shoot bullets at the invaders.</li>
+            <li>Destroy all invaders to advance to the next level.</li>
+            <li>Avoid getting hit by the invaders' bullets or letting them reach you.</li>
+            <li>Your score increases with each invader you destroy.</li>
+            <li>Watch out for your lives, displayed under the score!</li>
+        </ol>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
+

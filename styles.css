@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    background: black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#game {
+    position: relative;
+    width: 1100px;
+    height: 900px;
+    margin: 150px auto 20px auto;
+    border: 2px solid white;
+    background: url('images/Map.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.bunker {
+    position: absolute;
+    width: 80px;
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1px;
+}
+
+.bunker-block {
+    background-color: green;
+    width: 100%;
+    height: 100%;
+}
+
+.destroyed {
+    background-color: transparent;
+}
+
+#player {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 50px);
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('images/space_invader.png');
+}
+
+.invader {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.ufo {
+    background-image: url('images/UFO.png');
+}
+
+.squid {
+    background-image: url('images/Squid.png');
+}
+
+.ghost1 {
+    background-image: url('images/Ghost1.png');
+}
+
+.invader-bullet {
+    position: absolute;
+    width: 5px;
+    height: 15px;
+    background: red;
+    z-index: 1000;
+}
+
+.bullet {
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    background: yellow;
+}
+
+#scoreboard {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    z-index: 10; /* Ensure it is above other elements */
+}
+
+#score, #level {
+    font-size: 40px;
+}
+
+#leaderboard {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    font-size: 30px;
+    z-index: 10;
+}
+
+#leaderboard h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+}
+
+#leaderboard-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    width: 200px;
+}
+
+#how-to-play {
+    position: absolute;
+    top: 1050px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    z-index: 5; /* Lower z-index than previous scores */
+}
+
+#lives-container {
+    position: absolute;
+    top: 1100px;
+    right: 1000px;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.life {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
