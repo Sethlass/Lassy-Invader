@@ -1,6 +1,6 @@
                                  Invaders Project
 
-Welcome to the Lssy Invaders game project! This project is a recreation of the classic Space Invaders game using HTML, CSS, and JavaScript. Follow the steps below to set up and run the game on your local machine.
+Welcome to the Lassy Invaders game project! This project is a recreation of the classic Space Invaders game using HTML, CSS, and JavaScript. Follow the steps below to set up and run the game on your local machine.
 
 ## Before you begin, make sure you have the following software installed:
 
